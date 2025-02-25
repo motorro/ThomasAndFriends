@@ -1,0 +1,83 @@
+[versions]
+agp = "8.2.2"
+android-compileSdk = "34"
+android-minSdk = "26"
+android-targetSdk = "34"
+androidx-activityCompose = "1.9.0"
+androidx-appcompat = "1.7.0"
+androidx-constraintlayout = "2.1.4"
+androidx-core-ktx = "1.13.1"
+androidx-espresso-core = "3.5.1"
+androidx-material = "1.12.0"
+compose-material3 = "1.6.11"
+androidx-test-junit = "1.1.5"
+compose = "1.6.10"
+compose-tooling = "1.6.8"
+compose-plugin = "1.6.11"
+junit = "4.13.2"
+kotlin = "2.0.0"
+kserialization = "1.6.3"
+coroutines = "1.8.1"
+statemachine = "3.2.1"
+firebase = "1.11.1"
+firebase-android = "33.1.0"
+datetime = "0.6.0"
+compose-maps = "5.0.3"
+foundationLayoutAndroid = "1.6.8"
+
+
+[libraries]
+kotlin-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "coroutines" }
+kotlin-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "coroutines" }
+kotlin-coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "coroutines" }
+kotlin-coroutines-swing = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-swing", version.ref = "coroutines" }
+kotlin-serialization-core = { module = "org.jetbrains.kotlinx:kotlinx-serialization-core", version.ref = "kserialization" }
+kotlin-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kserialization" }
+kotlin-datetime = { module = "org.jetbrains.kotlinx:kotlinx-datetime", version.ref = "datetime" }
+kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
+kotlin-test-junit = { module = "org.jetbrains.kotlin:kotlin-test-junit", version.ref = "kotlin" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "androidx-core-ktx" }
+androidx-test-junit = { group = "androidx.test.ext", name = "junit", version.ref = "androidx-test-junit" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "androidx-espresso-core" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "androidx-appcompat" }
+androidx-material = { group = "com.google.android.material", name = "material", version.ref = "androidx-material" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "androidx-constraintlayout" }
+androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "androidx-activityCompose" }
+compose-ui-tooling = { module = "androidx.compose.ui:ui-tooling", version.ref = "compose-tooling" }
+compose-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "compose-tooling" }
+compose-material3 = { module ="org.jetbrains.compose.material3:material3", version.ref = "compose-material3" }
+commonstatemachine-machine = { module = "com.motorro.commonstatemachine:commonstatemachine", version.ref = "statemachine"}
+commonstatemachine-coroutines = { module = "com.motorro.commonstatemachine:coroutines", version.ref = "statemachine"}
+
+napier = { module = "io.github.aakira:napier", version = "2.7.1" }
+
+firebase-android = { module = "com.google.firebase:firebase-bom", version.ref = "firebase-android" }
+firebase-google-common = { module = "com.google.firebase:firebase-common" }
+firebase-common = { module = "dev.gitlive:firebase-common", version.ref = "firebase" }
+firebase-auth = { module = "dev.gitlive:firebase-auth", version.ref = "firebase" }
+firebase-functions = { module = "dev.gitlive:firebase-functions", version.ref = "firebase" }
+firebase-firestore = { module = "dev.gitlive:firebase-firestore", version.ref = "firebase" }
+firebase-java = { module = "dev.gitlive:firebase-java-sdk", version = "0.4.0" }
+okhttp = { module = "com.squareup.okhttp3:okhttp", version = "4.12.0" }
+javax-inject = { module = "javax.inject:javax.inject", version = "1" }
+
+google-maps = { module = "com.google.android.gms:play-services-maps", version = "18.2.0"}
+google-maps-location = { module = "com.google.android.gms:play-services-location", version = "21.3.0"}
+google-maps-compose = { module = "com.google.maps.android:maps-compose", version.ref = "compose-maps"}
+google-maps-compose-utils = { module = "com.google.maps.android:maps-compose-utils", version.ref = "compose-maps"}
+google-maps-compose-widgets = { module = "com.google.maps.android:maps-compose-widgets", version.ref = "compose-maps"}
+
+androidx-foundation-layout-android = { group = "androidx.compose.foundation", name = "foundation-layout-android", version.ref = "foundationLayoutAndroid" }
+
+[plugins]
+androidApplication = { id = "com.android.application", version.ref = "agp" }
+androidLibrary = { id = "com.android.library", version.ref = "agp" }
+jetbrainsCompose = { id = "org.jetbrains.compose", version.ref = "compose-plugin" }
+compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+kotlinSerialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+gms = { id = "com.google.gms.google-services", version = "4.4.2" }
+google_ksp = { id = "com.google.devtools.ksp", version = "2.0.0-1.0.21" }
+test-mockmp-plugin = { id = "org.kodein.mock.mockmp", version = "1.17.0" }
+jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }

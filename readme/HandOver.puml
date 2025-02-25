@@ -1,0 +1,20 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+actor User
+boundary Chat
+control Thomas
+control "Topham Hatt" as TH
+
+User -> Chat: "I want some burgers"
+App -> Chat: createMessage("I want some burgers")
+App -> Thomas: run
+Thomas -> Chat: getCrew
+Thomas <-- Chat: "Topham Hatt"
+Thomas -> Chat: handOver("Topham Hatt", "Client wants some burgers")
+App -> TH: "Client wants some burgers"
+TH -> Chat: "How many burgers do you want?"
+User <- Chat: "How many burgers do you want?"
+@enduml
