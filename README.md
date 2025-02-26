@@ -25,6 +25,8 @@ their own order part by calling functions defined in its own scope.
 Overall the pattern is similar to [Crew AI](https://www.crewai.com/) or [LangChain](https://www.langchain.com/) agentic flows 
 and allows to narrow down the assistant instructions and to better focus each assistant.
 
+Take a look at the [video](https://www.youtube.com/watch?v=az01AnARl10) that demonstrates the complete flow of booking a charter
+
 ## Copyright
 
 [Thomas and Friends series](https://en.wikipedia.org/wiki/Thomas_%26_Friends): Mattel and Awdry Family
